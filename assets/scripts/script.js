@@ -74,7 +74,7 @@ function getWeather(location) {
       var weather2 = data.list[8];
       var weather2Date = new Date(weather2.dt_text);
       date2.textContent = `${weather2.dt_txt.substring(0, 10)}`;
-      tempLim2Div.textContent = `High/Low: ${weather2.main.temp_max}°F/${weather2.main.temp_min}°F`;
+      tempLim2Div.textContent = `Temp: ${weather2.main.temp}°F`;
       icon2Img.src = `https://openweathermap.org/img/w/${weather2.weather[0].icon}.png`;
       weatherDesc2Div.textContent = weather2.weather[0].description;
       humidity2Div.textContent = `Humidity: ${weather2.main.humidity}`;
@@ -83,7 +83,7 @@ function getWeather(location) {
       var weather3 = data.list[16];
       var weather3Date = new Date(weather3.dt_text);
       date3.textContent = `${weather3.dt_txt.substring(0, 10)}`;
-      tempLim3Div.textContent = `High/Low: ${weather3.main.temp_max}°F/${weather3.main.temp_min}°F`;
+      tempLim3Div.textContent = `Temp: ${weather3.main.temp}°F`;
       icon3Img.src = `https://openweathermap.org/img/w/${weather3.weather[0].icon}.png`;
       weatherDesc3Div.textContent = weather3.weather[0].description;
       humidity3Div.textContent = `Humidity: ${weather3.main.humidity}`;
@@ -92,7 +92,7 @@ function getWeather(location) {
       var weather4 = data.list[24];
       var weather4Date = new Date(weather4.dt_text);
       date4.textContent = `${weather4.dt_txt.substring(0, 10)}`;
-      tempLim4Div.textContent = `High/Low: ${weather4.main.temp_max}°F/${weather4.main.temp_min}°F`;
+      tempLim4Div.textContent = `Temp: ${weather4.main.temp}°F`;
       icon4Img.src = `https://openweathermap.org/img/w/${weather4.weather[0].icon}.png`;
       weatherDesc4Div.textContent = weather4.weather[0].description;
       humidity4Div.textContent = `Humidity: ${weather4.main.humidity}`;
@@ -101,7 +101,7 @@ function getWeather(location) {
       var weather5 = data.list[32];
       var weather5Date = new Date(weather5.dt_text);
       date5.textContent = `${weather5.dt_txt.substring(0, 10)}`;
-      tempLim5Div.textContent = `High/Low: ${weather5.main.temp_max}°F/${weather5.main.temp_min}°F`;
+      tempLim5Div.textContent = `Temp: ${weather5.main.temp}°F`;
       icon5Img.src = `https://openweathermap.org/img/w/${weather5.weather[0].icon}.png`;
       weatherDesc5Div.textContent = weather5.weather[0].description;
       humidity5Div.textContent = `Humidity: ${weather5.main.humidity}`;
